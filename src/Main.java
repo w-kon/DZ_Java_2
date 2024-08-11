@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         int score = 430;
         int bonusPrice = 100;
-        int toppingUp = 2200;
-        int bonusScore = toppingUp / bonusPrice;
+        int toppingUp = 1200;
+        int bonusScore = ((toppingUp > 1000)? (toppingUp / bonusPrice): 0 );
         System.out.println("Итого баланс " + (score + toppingUp + bonusScore) + " руб.");
         System.out.println("Бонусов зачислено " + bonusScore + " руб.");
 
